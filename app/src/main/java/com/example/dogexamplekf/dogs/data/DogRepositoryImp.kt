@@ -24,15 +24,19 @@ class DogRepositoryImp @Inject constructor(
                     dogDataDao.insert(dogList)
                     ServiceResponse.Successful(dogList)
                 } else {
-                    ServiceResponse.Failed(ERROR_MESSAGE)
+                    getDogListFromDao()
                 }
             } catch (e: Exception) {
-                val dogList = dogDataDao.fetchItems()
-                return@withContext if (dogList.isNotEmpty()) {
-                    ServiceResponse.Successful(dogList)
-                } else {
-                    ServiceResponse.Failed(ERROR_MESSAGE)
-                }
+                getDogListFromDao()
             }
         }
+
+    private fun getDogListFromDao() : ServiceResponse<List<DogModel>>  {
+        val dogList = dogDataDao.fetchItems()
+        return if (dogList.isNotEmpty()) {
+            ServiceResponse.Successful(dogList)
+        } else {
+            ServiceResponse.Failed(ERROR_MESSAGE)
+        }
+    }
 }

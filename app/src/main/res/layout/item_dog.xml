@@ -8,7 +8,7 @@
     android:paddingBottom="@dimen/dim_24">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gl_vertical_36"
+        android:id="@+id/gl_vertical_40"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -22,7 +22,7 @@
         android:scaleType="fitXY"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/gl_vertical_36"
+        app:layout_constraintEnd_toEndOf="@id/gl_vertical_40"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/circleImageView" />
@@ -36,7 +36,7 @@
         app:cardBackgroundColor="@color/card_color"
         app:layout_constraintBottom_toBottomOf="@id/iv_dog_photo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/gl_vertical_36"
+        app:layout_constraintStart_toStartOf="@id/gl_vertical_40"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
