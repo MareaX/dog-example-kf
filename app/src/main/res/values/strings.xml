@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">dog example kf</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_dog_image">dog image</string>
+    <string name="lbl_back_image">back image</string>
+    <string name="lbl_title">Dogs We Love</string>
+    <string name="lbl_age">Almost %d years</string>
 </resources>

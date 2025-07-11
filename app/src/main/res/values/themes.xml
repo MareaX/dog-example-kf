@@ -6,4 +6,16 @@
     </style>
 
     <style name="Theme.DogExampleKf" parent="Base.Theme.DogExampleKf" />
+
+    <style name="circleImageView" parent="">
+        <item name="cornerSize">5%</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">32dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">32dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
 </resources>
