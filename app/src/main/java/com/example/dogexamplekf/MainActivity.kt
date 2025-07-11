@@ -1,14 +1,12 @@
 package com.example.dogexamplekf
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import com.example.dogexamplekf.dogs.presentation.DogActivity
+import androidx.activity.ComponentActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        DogActivity.startActivity(this)
     }
 }
