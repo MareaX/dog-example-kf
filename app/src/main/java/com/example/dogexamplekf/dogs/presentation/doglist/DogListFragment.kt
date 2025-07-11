@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.dogexamplekf.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DogListFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
