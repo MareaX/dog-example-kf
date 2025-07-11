@@ -26,10 +26,11 @@ lifecycleRuntimeKtx = "2.8.7"
 composeRuntime = "1.7.8"
 activityCompose = "1.10.1"
 composeBom = "2025.03.00"
-navigationCompose = "2.8.9"
+navigationCompose = "2.9.1"
 hiltNavigation = "1.2.0"
 coilVersion = "3.1.0"
 constraintlayout = "1.1.1"
+kotlinxSerialization = "1.6.3"
 
 [libraries]
 androidx-core = { group = "androidx.core", name = "core", version.ref = "coreKtx" }
@@ -51,8 +52,8 @@ androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
 androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
-androidx-material3 = { group = "androidx.compose.material3", name = "material" }
-androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 androidx-appcompat-resources = { group = "androidx.appcompat", name = "appcompat-resources", version.ref = "appcompat" }
 androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerView" }
@@ -86,10 +87,15 @@ kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-cor
 core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
 kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
 
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
+jetbrainsKotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
 dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
