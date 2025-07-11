@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "dog example kf"
 include ':app'
+include ':retrofitLib'
+include ':roomLib'
